@@ -1,23 +1,22 @@
 <template>
 	<v-card class="my-2" max-width="500px">
 		<v-card-title class="d-flex justify-space-between">
-			<span>Current toDo</span>
+			<span>{{todo.text}}</span>
 			<v-spacer></v-spacer>
 			
-			<app-menu>
-			
-			</app-menu>
+			<todo-menu :todo="todo"/>
 			
 		</v-card-title>
 	</v-card>
 </template>
 
 <script>
-	import AppMenu from '@/components/global/AppMenu.vue'
+	import TodoMenu from '@/components/main/TodoMenu.vue'
 	
 	export default {
 		components: {
-			AppMenu
-		}
+			TodoMenu
+		},
+		props: ['todo']
 	}
 </script>

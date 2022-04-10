@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style>
-	.main {
+	body, .main {
 		background-color: #f0f0f0;
 		height: 100vh;
 	}

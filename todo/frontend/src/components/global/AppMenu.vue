@@ -5,14 +5,27 @@
 		</template>
 		
 		<v-list elevation="5" rounded class="pa-0">
-			<v-list-item>
+			<slot name="action-buttons"></slot>
+<!-- 			<v-list-item>
 				<v-list-item-title>
 					<v-btn class="text-red" plain>Delete</v-btn>
 				</v-list-item-title>
 			</v-list-item>
+			
 			<v-list-item>
-				<v-list-item-title><v-btn class="text-orange" plain>Edit</v-btn></v-list-item-title>
-			</v-list-item>
+				<v-list-item-title>
+					<v-btn class="text-orange" plain>Edit</v-btn>
+				</v-list-item-title>
+			</v-list-item> -->
+			
 		</v-list>
 	</v-menu>
 </template>
+
+<script>
+	
+	
+	export default {
+		
+	}
+</script>
